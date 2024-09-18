@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <title>MandorainCss</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            display: grid;
+            height: 748px;
+            width: 748px;
+            grid-template-columns: 320px 198px 153px 50px;
+            grid-template-rows: 414px 130px 155px 22px;
+            gap: 9px;
+            background-color: #000;
+        
+
+        }
+
+        .red{
+            background-color:  #E72F24;
+        }
+
+        .white{
+            background-color: #F0F1EC;
+        }
+
+        .blue{
+            background-color:  #004592;
+            border-bottom: 10px solid black;
+    
+        }
+
+        .yellow{
+            background-color:#F9D01E;
+        }
+        
+        .one{
+            grid-column: span 3;
+        }
+
+        .two{
+            grid-row: span 2;
+        }
+
+        .three {
+            grid-area: 2/2/-2/4;
+        
+        }
+
+        .four{
+            grid-row: span 2;
+        }
+
+
+        .black{
+            background-color: #232629;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body style="background-color:rgb(164, 242, 242)" >
+    <div class="container">
+        <div class="red"></div>
+        <div class="white one"></div>
+        <div class="white two"></div>
+        <div class="white three"></div>
+        <div class="blue"></div>
+        <div class="white four"></div>
+        <div class="white five"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+    </div>
+</body>
+</html>
